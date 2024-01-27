@@ -110,27 +110,32 @@ section {
 
 .home-content .text-animate{
     position: relative;
-    width: 32.8rem;
+    width: 36.8rem;
 }
 
 .home-content .text-animate h3 {
-    position: relative;
-    font-size: 3.2rem;
-    font-weight: 700;
+    position: relative; 
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-top: 5px ;
+    text-decoration: var(--main-color) solid underline 5px;
+    text-underline-offset: 10px;
     
 }
 
-.home-content .text-animate h3::before{
+.home-content .text-animate h3::before {
     content: 'Web Developer';
     color: var(--main-color);
     animation: words 20s infinite;
+    -webkit-text-stroke: 1px var(--main-color);
+    color: transparent;
 }
 
 .home-content .text-animate h3::after {
     content: ' ';
     background-color: var(--bg-color);
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 4px);
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
@@ -324,6 +329,23 @@ span {
     position: relative;
     display: inline-block;
     font-size: 2.6rem;
+}
+
+.about-content .text-animate::before {
+    content: 'Web Developer';
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.about-content .text-animate::after {
+    content: ' ';
+    background-color: var(--second-bg-color);
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 100%;
+    border-left: 3px solid var(--second-bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite , typing 20s steps(14) infinite;
 }
 
 .about-content p {
@@ -879,4 +901,58 @@ section:nth-child(odd) .animate.scroll,
         transform: translate(-50% , -50%) rotate(360deg);
     }
 } 
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--main-color);
+
+    } 
+}
+
+@keyframes words {
+    0%,20% {
+        content: 'Web Developer';
+    }
+    21%,40% {
+        content: 'Graphics Desginer';
+    }
+    41%,60% {
+        content: 'Video Editor';
+    } 
+    61%,80% {
+        content: 'Software Developer';
+    } 
+    81%,100% {
+        content: 'Gammer';
+    }
+    
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 4px );
+    }
+    
+}
 
