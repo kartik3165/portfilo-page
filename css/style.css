@@ -86,7 +86,7 @@ section {
      display: flex;
      align-items: center;
      padding: 0 9%;
-     background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW-q5zEl9n7yLvAg-GQcBRZO2Rhpn49SRcI81SgC5lhe7qfCk33BfRCIzp9Z_1oFhuB7tUuEzPZRnlZqkMi-YmRuQ6fNbPKfbICALBTFqOB-KYk-fnhqssxM8IvUatNcbS3R0qnhjHT21_-UFNZs1KP6DVZhCSJ2dxkkebztnX929S1k77OSQlGJd83ljs/s1600/home.png' ) no-repeat;
+     background: url('/images/home.png' ) no-repeat;
      background-size: cover;
      background-position: center;
 }
