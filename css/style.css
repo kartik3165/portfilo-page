@@ -787,12 +787,29 @@ section:nth-child(odd) .animate.scroll,
         padding: 10rem 4% 2rem;
     }
 
-    .home {
+    /*.home {
         padding : 0 4%;
         background: url('/portfilo-page/images/home.png' ) no-repeat;
         background-size: cover;
-        background-position: left;
+        background-position: left;*/
     }
+    
+    .home {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 9%;
+    }
+    
+    .background-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
 
     .footer {
         padding: 2rem 4%;
