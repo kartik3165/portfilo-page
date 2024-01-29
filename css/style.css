@@ -86,7 +86,7 @@ section {
      display: flex;
      align-items: center;
      padding: 0 9%;
-     background: url('/images/home.png' ) no-repeat;
+     background: url('/portfilo-page/images/home.png' ) no-repeat;
      background-size: cover;
      background-position: center;
 }
@@ -550,7 +550,39 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 77%; 
+    width: 10%; 
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+    width: 50%; 
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 43%; 
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 65%; 
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+    width: 55%; 
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+    width: 76%; 
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+    width: 90%; 
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+    width: 35%; 
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 69%; 
 }
 
 .contact {
@@ -732,7 +764,8 @@ section:nth-child(odd) .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
+.footer.show-animate .animate.scroll
+.project.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 } 
@@ -756,6 +789,9 @@ section:nth-child(odd) .animate.scroll,
 
     .home {
         padding : 0 4%;
+        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background-size: cover;
+        background-position: left;
     }
 
     .footer {
@@ -836,10 +872,10 @@ section:nth-child(odd) .animate.scroll,
     .home{
         display: flex;
         align-items: center;
-        padding: 0 9%;
-        background: url('/images/home.png' ) no-repeat;
+        padding: 0.3%;
+        background: url('/portfilo-page/images/home.png' ) no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: left;
    }
 }
 
@@ -861,19 +897,22 @@ section:nth-child(odd) .animate.scroll,
         width: 38px;
         height: 38px;
     }  
-    .home{
-        display: flex;
-        align-items: center;
-        padding: 0 9%;
-        background: url('/images/home.png' ) no-repeat;
+    .home {
+        background: url('/portfilo-page/images/home.png' ) no-repeat;
         background-size: cover;
-        background-position: center;
-   }  
+        background-position: left;
+    }
 }
 
 @media (max-width:462px) {
     .home-content h1 {
         font-size: 5.2rem;
+    }
+
+    .home {
+        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background-size: cover;
+        background-position: left;
     }
 
     .education {
@@ -892,14 +931,6 @@ section:nth-child(odd) .animate.scroll,
         margin-top: 2rem;
         text-align: center;
     }
-    .home{
-        display: flex;
-        align-items: center;
-        padding: 0 9%;
-        background: url('/images/home.png' ) no-repeat;
-        background-size: cover;
-        background-position: center;
-   }
 }
 
 @media (max-width:371px) {
@@ -913,14 +944,11 @@ section:nth-child(odd) .animate.scroll,
       .home-content h1 {
         font-size: 5rem;
       }
-      .home{
-        display: flex;
-        align-items: center;
-        padding: 0 9%;
-        background: url('/images/home.png' ) no-repeat;
+      .home {
+        background: url('/portfilo-page/images/home.png' ) no-repeat;
         background-size: cover;
-        background-position: center;
-   }
+        background-position: left;
+    }
 }
 
 @keyframes showsRight {
