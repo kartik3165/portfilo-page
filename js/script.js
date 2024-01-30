@@ -47,3 +47,19 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+let mixerPortfolio = mixitup('.project_container', {
+    selectors: {
+        target: '.project_container'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+const linkWork = document.querySelectorAll('.project_item')
+function activeproject() {
+    linkWork.forEach(L=> l.classList.remove('active-project'))
+    this.classList.add('active-project')
+}
+linkWork.forEach(L => l.addEventListener('click' , activeproject))
