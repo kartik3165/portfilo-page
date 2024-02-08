@@ -148,7 +148,7 @@ section {
     margin: 2rem 0 4rem;
 }
 
-.btn-box{
+.m-box{
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -268,7 +268,7 @@ section {
     background: var(--bg-color) ;
     opacity: .8;
 }
-
+ 
 .about {
     display: flex;
     justify-content: center;
@@ -363,6 +363,14 @@ span {
     background: var(--second-bg-color);
 }
 
+.see_btn {
+    display: inline-block;
+    width: 15rem;
+}
+
+.see_btn a::before {
+    background: var(--second-bg-color);
+}
 .education {
     display: flex;
     justify-content: center;
@@ -585,28 +593,44 @@ span {
     width: 69%; 
 }
 
+.work-holder {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-bottom: 60px;  
 }
-
+ 
 .work {
     border-radius:10px;
     position: relative;
-    overflow: hidden;
-}    
+    overflow: hidden;   
+} 
+
+.project_section{
+    text-align: center;;
+}
 
 .work img {
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5;
+}
+
+.work:hover img {
+    transform: scale(1.1);
 }
 
 .layer {
     width: 100%;
-    height: 100%;
+    height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6), #00abf0);
     border-radius: 10px;
     position: absolute;
@@ -618,8 +642,34 @@ span {
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
 }
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
 
 .contact {
     min-height: auto;
@@ -709,8 +759,7 @@ span {
     background: var(--second-bg-color);
 }
 
-.footer-text,
-.footer-iconTop {
+.footer-text, .footer-iconTop {
     position: relative;
 }
 
@@ -773,7 +822,7 @@ span {
     width: 50px;
 }
 
-.logo .animate,
+.logo .animate, 
 .navbar .animate,
 #menu-icon .animate,
 .home.show-animate .animate {
@@ -808,7 +857,6 @@ section:nth-child(odd) .animate.scroll,
 } 
 
 /* breakpoint for reponsive website */
-
 @media (max-width : 1200px) {
     html {
         font-size: 55%;
@@ -906,7 +954,7 @@ section:nth-child(odd) .animate.scroll,
         opacity: .6;
     }
 
-    .home{
+    .home {
         display: flex;
         align-items: center;
         padding: 0.3%;
@@ -982,7 +1030,7 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5rem;
       }
       .home {
-        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background: url('/portfilo-page/images/home.png') no-repeat;
         background-size: cover;
         background-position: left;
     }
@@ -1003,7 +1051,6 @@ section:nth-child(odd) .animate.scroll,
 @keyframes cursor {
     to{
         border-left: 2px solid var(--main-color);
-
     } 
 }
 
@@ -1049,7 +1096,7 @@ section:nth-child(odd) .animate.scroll,
     65%,
     80%,
     85% {
-        width: calc(100% + 4px );
+        width: calc(100% + 8px );
     }
     
 }
