@@ -24,4 +24,9 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
 }
