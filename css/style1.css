@@ -118,8 +118,8 @@ section {
     font-size: 3.5rem;
     font-weight: bolder;
     margin-top: 5px ;
-    text-decoration: var(--main-color) solid underline 5px;
-    text-underline-offset: 10px;
+    /*text-decoration: var(--main-color) solid underline 5px;
+    text-underline-offset: 10px;*/
     
 }
 
@@ -1068,7 +1068,7 @@ section:nth-child(odd) .animate.scroll,
         content: 'Software Developer';
     } 
     81%,100% {
-        content: 'Gammer';
+        content: 'Co-ordinator';
     }
     
 }
