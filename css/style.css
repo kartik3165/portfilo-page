@@ -1077,3 +1077,8 @@ section:nth-child(odd) .animate.scroll,
     }
     
 }
+
+#msg {
+    color: var(--text-color);
+    text-align: center;
+}
