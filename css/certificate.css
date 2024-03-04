@@ -96,12 +96,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 70px;
 }
 
 .image-cell {
@@ -132,6 +133,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 999;
+    text-decoration: none;
+    text-decoration-color: var(--main-color);
 }
 
 .fullscreen-image img {
@@ -161,8 +164,9 @@ span {
 .back-btn {
    text-align: left;
    margin: 15px;
-   font-size: 2rem;
-   color: white;
+   font-size: 3.4rem;
+   color: var(--main-color);
+   background-color: transparent;
 }
 
 .title {

@@ -86,7 +86,7 @@ section {
      display: flex;
      align-items: center;
      padding: 0 9%;
-     background: url('/portfilo-page/images/home.png' ) no-repeat;
+     background: url('/images/home.png' ) no-repeat;
      background-size: cover;
      background-position: center;
 }
@@ -958,7 +958,7 @@ section:nth-child(odd) .animate.scroll,
         display: flex;
         align-items: center;
         padding: 0.3%;
-        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background: url('/images/home.png' ) no-repeat;
         background-size: cover;
         background-position: left;
    }
@@ -983,7 +983,7 @@ section:nth-child(odd) .animate.scroll,
         height: 38px;
     }  
     .home {
-        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background: url('/images/home.png' ) no-repeat;
         background-size: cover;
         background-position: left;
     }
@@ -995,7 +995,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home {
-        background: url('/portfilo-page/images/home.png' ) no-repeat;
+        background: url('/images/home.png' ) no-repeat;
         background-size: cover;
         background-position: left;
     }
@@ -1030,9 +1030,10 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5rem;
       }
       .home {
-        background: url('/portfilo-page/images/home.png') no-repeat;
+        background: url('/images/home.png') no-repeat;
         background-size: cover;
         background-position: left;
+        
     }
 }
 
@@ -1068,7 +1069,7 @@ section:nth-child(odd) .animate.scroll,
         content: 'Software Developer';
     } 
     81%,100% {
-        content: 'Co-ordinator';
+        content: 'FUCK YOU!';
     }
     
 }
